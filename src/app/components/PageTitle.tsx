@@ -1,14 +1,14 @@
-export default function PageTitle({title = "", subtitle = "", body = ""}: {title?: string, subtitle?: string, body?: string}){
+export default function PageTitle({titleENG = "", titleCHI = "", body = ""}: {titleENG?: string, titleCHI?: string, body?: string}){
 
     return (
-        <div  className= "flex flex-col ml-[84px] my-[21px] w-[420px] gap-[42px]">
-            <div>
-            <h1>{title}</h1>
-            <h2>{subtitle}</h2>
+        <div  className= "flex flex-col mx-[60px] w-[360px] ">
+            <hr className = "border-3"/>
+            <div className = "py-2">
+            <h1 className = "font-bold">{titleENG}</h1>
+            <h1>{titleCHI}</h1>
             </div>
-
-            <p>{body}</p>
-
+            <hr className = "border-2"/>
+            <p className = "py-2">{body}</p>
 
 
         </div>

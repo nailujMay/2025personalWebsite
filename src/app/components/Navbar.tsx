@@ -8,31 +8,26 @@ export default function Navbar(){
 
     const links = [
         {
-            label: "about",
-            href: "/about"
+            label: "JY",
+            href: "/"
         },
         {
-            label: "photos",
+            label: "PHOTOS",
             href: "/photos"
         },
         {
-            label: "video",
+            label: "VIDEO",
             href: "/video"
         },
         {
-            label: "dev",
+            label: "DEV",
             href: "/dev"
         },
    ]
 
 
     return(
-        <div className = "flex items-center px-[84px] py-[42px] justify-between  ">
-            <div>
-                <Link href="/">
-                    <p>{"julian"}</p>
-                </Link>
-            </div>
+        <div className = "flex items-center px-[60px] py-[60px] justify-between  ">
             <div className = "flex items-center gap-[21px]">
             {links.map((link)=>{
                 console.log("link.href",link.href);
@@ -40,7 +35,7 @@ export default function Navbar(){
                 console.log(";alskdjf;alksdj",pathname === link.href);
                 return(
                     <Link href={link.href} key={link.href} className = {`${pathname === link.href ? 'underline' : ''}`}>
-                        {link.label}
+                        <p className = "text-text-primary">{link.label}</p>
                     </Link>
                 )
             })}

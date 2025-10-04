@@ -2,18 +2,45 @@ import Navbar from "../components/Navbar";
 import PageTitle from "../components/PageTitle";
 import Image from "next/image";
 
-const photoFiles = ["../images/mainPage/DSCF6228.jpg", 
-    "../images/DSCF2876.jpg", "../images/DSCF6098.jpg", "../images/DSCF7232.jpg"];
-
+const photoFiles = [
+    "../images/DSC00638.JPG",
+    "../images/DSC01222.png",
+    "../images/DSC01230.png",
+    "../images/DSC01319.JPG",
+    "../images/DSC01324.png",
+    "../images/DSC01420.png",
+    "../images/DSC01422.png",
+    "../images/DSCF2697.png",
+    "../images/DSCF2753.png",
+    "../images/DSCF2779.png",
+    "../images/DSCF2876.jpg",
+    "../images/DSCF2888.png",
+    "../images/DSCF2891.jpg",
+    "../images/DSCF2898.png",
+    "../images/DSCF2922.jpg",
+    "../images/DSCF2974 1.png",
+    "../images/DSCF3009.png",
+    "../images/DSCF3020.png",
+    "../images/DSCF3028.jpg",
+    "../images/DSCF3139.png",
+    "../images/DSCF3257.jpg",
+    "../images/DSCF3260.jpg",
+    "../images/DSCF3319.png",
+    "../images/DSCF3329.png",
+    "../images/DSCF3426.png",
+    "../images/DSCF3567.png",
+    "../images/DSCF4104.png",
+    "../images/DSCF4108.png"
+  ];
 
 
 function Photos(){
     return(
         <div>
             <Navbar />
-           <PageTitle title = "Photos" subtitle = "a snapshot of our world, a moment in time" />
+           <PageTitle titleENG = "Photography" titleCHI = "摄影" body= "This is the body of the photography section. My way of connecting with the world, one shot at a time." />
 
-           <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4 mx-[84px]">
+           <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4 mx-[60px]">
       {photoFiles.map((file, i) => (
         <div key={i} className="overflow-hidden rounded-x ">
           <Image
