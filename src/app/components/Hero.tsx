@@ -1,5 +1,6 @@
 
 export default function Hero(){
+    // this is the hero component
 
     return(
         <div className= "flex flex-col ml-[60px]  w-[240px] md:w-[300px] lg:w-[360px]" >
