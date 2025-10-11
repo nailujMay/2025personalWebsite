@@ -13,8 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "julian",
+  title: "JUILAN YAM",
   description: "my little corner of the internet",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
