@@ -38,7 +38,7 @@ function Photos(){
     return(
         <div>
             <Navbar />
-           <PageTitle titleENG = "Photography" titleCHI = "攝影" body= "Sand dunes in Peru, canals in Venice, cobble stone streets in Milan, and skyscrapers in NYC. Taking my camera where ever I go. Capturing moments so I'll never forget." />
+           <PageTitle titleENG = "Photography" titleCHI = "攝影" body= "Travelling. I can go on and on about my love of travel. From the sand dunes of Viña del Mar to the Eiffel tower in Paris, I take my camera wherever I go. Capturing moments so I never forget." />
            <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4 mx-[60px] py-[60px]">
       {photoFiles.map((file, i) => (
         <div key={i} className="overflow-hidden rounded-x ">
