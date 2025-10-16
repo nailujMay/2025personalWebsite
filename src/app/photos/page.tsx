@@ -43,10 +43,10 @@ function Photos(){
       {photoFiles.map((file, i) => (
         <div key={i} className="overflow-hidden rounded-x ">
           <Image
-            src={`/images/${file}`}   // Path inside /public
+            src={`/images/${file}`}   
             alt={`Photo ${i}`}
-            width={800}               // Give a default width
-            height={600}              // Give a default height
+            width={800}               
+            height={600}             
             className="w-full h-auto "
           />
         </div>

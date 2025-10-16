@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "JUILAN YAM",
+  title: "JULIAN YAM",
   description: "my little corner of the internet",
   icons: {
     icon: "/favicon.ico",
