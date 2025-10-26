@@ -15,10 +15,14 @@ export default function Navbar(){
             label: "PHOTOS",
             href: "/photos"
         },
-        // {
-        //     label: "VIDEO",
-        //     href: "/video"
-        // },
+        {
+            label: "VIDEO",
+            href: "/video"
+        },
+        {
+            label: "ABOUT",
+            href: "/about"
+        },
         // {
         //     label: "DEV",
         //     href: "/dev"
