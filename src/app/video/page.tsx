@@ -21,7 +21,7 @@ export default function Video() {
       <Navbar />
       <PageTitle
         titleENG="Video"
-        body="This is the body of the video section. My way of connecting with the world, one shot at a time."
+        body="My latest endeavour into the media world. Using my skills to promote hackathons and run clubs. Hit me up if you ever want to shoot :)"
       />
 
       <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4 mx-[60px] py-[60px]">
