@@ -34,9 +34,26 @@ const Page = () => {
             entrepreneurship and finding his personal legend (iykyk).
             <br />
             <br />
-            Wishing you a fantastic day with a great adventure.
+            <strong>Wishing you a fantastic day with a great adventure.</strong>
           </p>
           <hr className="border-1" />
+          <div className="flex gap-2 py-1">
+            <a href="https://www.instagram.com/julian.yam/" target="_blank">
+              {"INSTAGRAM"}
+            </a>
+            <a
+              href="https://www.linkedin.com/in/julian-yam-6130111b2/"
+              target="_blank"
+            >
+              {"LINKEDIN"}
+            </a>
+            <a href="https://github.com/nailujMay" target="_blank">
+              {"GITHUB"}
+            </a>
+            <a href="https://x.com/nailuj_may" target="_blank">
+              {"TWITTER"}
+            </a>
+          </div>
         </div>
       </div>
     </div>

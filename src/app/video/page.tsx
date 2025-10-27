@@ -21,6 +21,7 @@ export default function Video() {
       <Navbar />
       <PageTitle
         titleENG="Video"
+        titleCHI="影片"
         body="My latest endeavour into the media world. Using my skills to promote hackathons and run clubs. Hit me up if you ever want to shoot :)"
       />
 

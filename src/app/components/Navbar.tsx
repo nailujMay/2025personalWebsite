@@ -12,6 +12,10 @@ export default function Navbar() {
       href: "/",
     },
     {
+      label: "ABOUT",
+      href: "/about",
+    },
+    {
       label: "PHOTOS",
       href: "/photos",
     },
@@ -19,10 +23,7 @@ export default function Navbar() {
       label: "VIDEO",
       href: "/video",
     },
-    {
-      label: "ABOUT",
-      href: "/about",
-    },
+
     // {
     //     label: "DEV",
     //     href: "/dev"
