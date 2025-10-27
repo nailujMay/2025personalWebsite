@@ -5,6 +5,7 @@ import videoUrls from "./vid-thumbnails.json";
 import Image from "next/image";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 
 interface VideoThumbnail {
   title: string;
@@ -42,10 +43,13 @@ export default function Video() {
               className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
             />
             {/* Hover Overlay */}
-            <div className="absolute inset-0 bg-black transition-all duration-300 flex align opacity-0 group-hover:opacity-60 pl-2 pt-2" />
-            <div className="absolute inset-0 flex flex-col gap-1 pl-4 pt-4 pointer-events-none opacity-0 group-hover:opacity-100 w-70">
-              <p className="!text-background text-lg ">{thumbnail.title}</p>
-              <p className="!text-background text-sm ">{thumbnail.date}</p>
+            <div className="absolute inset-0 bg-black transition-all duration-300 flex align opacity-0 group-hover:opacity-60 py-2 px-2" />
+            <div className="absolute inset-0 flex justify-between align-top gap-1 py-4 px-4 pointer-events-none opacity-0 group-hover:opacity-100 w-full">
+              <div className="flex flex-col gap-1">
+                <p className="!text-background text-lg ">{thumbnail.title}</p>
+                <p className="!text-background text-sm ">{thumbnail.date}</p>
+              </div>
+              <ArrowOutwardIcon className="text-background" />
             </div>
           </a>
         ))}
