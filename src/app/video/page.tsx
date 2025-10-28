@@ -46,10 +46,10 @@ export default function Video() {
             <div className="absolute inset-0 bg-black transition-all duration-300 flex align opacity-0 group-hover:opacity-60 py-2 px-2" />
             <div className="absolute inset-0 flex justify-between align-top gap-1 py-4 px-4 pointer-events-none opacity-0 group-hover:opacity-100 w-full">
               <div className="flex flex-col gap-1">
-                <p className="!text-background text-lg ">{thumbnail.title}</p>
-                <p className="!text-background text-sm ">{thumbnail.date}</p>
+                <p className="!text-[#FFFEF8] text-lg ">{thumbnail.title}</p>
+                <p className="!text-[#FFFEF8] text-lg ">{thumbnail.date}</p>
               </div>
-              <ArrowOutwardIcon className="text-background" />
+              <ArrowOutwardIcon className="text-[#FFFEF8]" />
             </div>
           </a>
         ))}
