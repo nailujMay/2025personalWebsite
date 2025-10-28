@@ -23,11 +23,11 @@ const Page = () => {
           </p>
           <hr className="border-1" />
           <p className="py-[60px]">
-            Julian is a engineer and filmmaker from Markham, Ontario. When he’s
-            not at work he spends his time running around (sometime literally)
-            with a camera to capture the world’s most fascinating stories. In
-            his down time he is watching movies, trying new recipes and
-            exploring the newest parts of whatever city he is in.
+            Julian is an engineer and filmmaker from Markham, Ontario. When he’s
+            not at work, he’s often running around (sometimes literally) with a
+            camera, capturing the world’s most fascinating stories. In his
+            downtime, he enjoys watching movies, trying new recipes, and
+            exploring new corners of whatever city he’s in.
             <br />
             <br />
             Currently exploring documentary filmmaking, travel, social
