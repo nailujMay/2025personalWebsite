@@ -35,8 +35,6 @@ export default function Video() {
             rel="noopener noreferrer"
             className="block overflow-hidden relative group cursor-pointer"
           >
-            {console.log(thumbnail.title)}
-            {console.log(thumbnail.src_url)}
             <Image
               src={thumbnail.thumbnail_path}
               alt={`Video ${i}`}
