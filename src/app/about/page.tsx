@@ -7,7 +7,7 @@ const Page = () => {
       <Navbar />
       <div className="flex flex-col gap-[20px] ml-[60px] md:flex-row">
         <Image
-          src={"/images/profile.JPG"}
+          src={"/images/profile_2.JPG"}
           alt="About"
           width={800}
           height={600}
