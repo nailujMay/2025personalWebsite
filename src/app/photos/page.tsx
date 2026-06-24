@@ -3,34 +3,34 @@ import PageTitle from "../components/PageTitle";
 import PhotoImage from "../components/PhotoImage";
 
 const photoFiles = [
-  "DSC00638.JPG",
-  "DSC01222.jpg",
-  "DSC01230.jpg",
-  "DSC01319.JPG",
-  "DSC01324.jpg",
-  "DSC01420.jpg",
-  "DSC01422.jpg",
-  "DSCF2697.jpg",
-  "DSCF2753.jpg",
-  "DSCF2779.jpg",
-  "DSCF2876.jpg",
-  "DSCF2888.jpg",
-  "DSCF2891.jpg",
-  "DSCF2898.jpg",
-  "DSCF2922.jpg",
-  "DSCF2974 1.jpg",
-  "DSCF3009.jpg",
-  "DSCF3020.jpg",
-  "DSCF3028.jpg",
-  "DSCF3139.jpg",
-  "DSCF3257.jpg",
-  "DSCF3260.jpg",
-  "DSCF3319.jpg",
-  "DSCF3329.jpg",
-  "DSCF3426.jpg",
-  "DSCF3567.jpg",
-  "DSCF4104.jpg",
-  "DSCF4108.jpg",
+  { file: "DSC00638.JPG", width: 2400, height: 1599 },
+  { file: "DSC01222.jpg", width: 2400, height: 1599 },
+  { file: "DSC01230.jpg", width: 2400, height: 1600 },
+  { file: "DSC01319.JPG", width: 2400, height: 1600 },
+  { file: "DSC01324.jpg", width: 2400, height: 1599 },
+  { file: "DSC01420.jpg", width: 2400, height: 1599 },
+  { file: "DSC01422.jpg", width: 2400, height: 1600 },
+  { file: "DSCF2697.jpg", width: 1601, height: 2400 },
+  { file: "DSCF2753.jpg", width: 1601, height: 2400 },
+  { file: "DSCF2779.jpg", width: 1600, height: 2400 },
+  { file: "DSCF2876.jpg", width: 2400, height: 1599 },
+  { file: "DSCF2888.jpg", width: 1601, height: 2400 },
+  { file: "DSCF2891.jpg", width: 2400, height: 1600 },
+  { file: "DSCF2898.jpg", width: 1600, height: 2400 },
+  { file: "DSCF2922.jpg", width: 2400, height: 1600 },
+  { file: "DSCF2974 1.jpg", width: 1600, height: 2400 },
+  { file: "DSCF3009.jpg", width: 2400, height: 1599 },
+  { file: "DSCF3020.jpg", width: 1670, height: 2400 },
+  { file: "DSCF3028.jpg", width: 2400, height: 1599 },
+  { file: "DSCF3139.jpg", width: 2400, height: 1600 },
+  { file: "DSCF3257.jpg", width: 2400, height: 1600 },
+  { file: "DSCF3260.jpg", width: 2400, height: 1600 },
+  { file: "DSCF3319.jpg", width: 2400, height: 1600 },
+  { file: "DSCF3329.jpg", width: 2400, height: 1546 },
+  { file: "DSCF3426.jpg", width: 1600, height: 2400 },
+  { file: "DSCF3567.jpg", width: 1599, height: 2400 },
+  { file: "DSCF4104.jpg", width: 2400, height: 1600 },
+  { file: "DSCF4108.jpg", width: 1600, height: 2400 },
 ];
 
 function Photos() {
@@ -43,9 +43,14 @@ function Photos() {
         body="Travelling. I can go on and on about my love of travel. From the sand dunes of Viña del Mar to the Eiffel tower in Paris, I take my camera wherever I go. Capturing moments so I never forget."
       />
       <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4 mx-[60px] py-[60px]">
-        {photoFiles.map((file, i) => (
+        {photoFiles.map((photo, i) => (
           <div key={i} className="overflow-hidden rounded-x ">
-            <PhotoImage src={`/images/${file}`} alt={`Photo ${i}`} />
+            <PhotoImage
+              src={`/images/${photo.file}`}
+              alt={`Photo ${i}`}
+              width={photo.width}
+              height={photo.height}
+            />
           </div>
         ))}
       </div>

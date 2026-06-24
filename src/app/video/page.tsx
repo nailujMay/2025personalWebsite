@@ -12,6 +12,8 @@ interface VideoThumbnail {
   date: string;
   src_url: string;
   thumbnail_path: string;
+  width: number;
+  height: number;
 }
 
 const thumbnails: VideoThumbnail[] = videoUrls.videos;
@@ -38,6 +40,8 @@ export default function Video() {
             <PhotoImage
               src={thumbnail.thumbnail_path}
               alt={`Video ${i}`}
+              width={thumbnail.width}
+              height={thumbnail.height}
               className="group-hover:scale-105"
             />
             {/* Hover Overlay */}

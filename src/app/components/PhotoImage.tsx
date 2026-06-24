@@ -6,18 +6,20 @@ import { useState } from "react";
 type PhotoImageProps = {
   src: string;
   alt: string;
+  width: number;
+  height: number;
   className?: string;
 };
 
-function PhotoImage({ src, alt, className = "" }: PhotoImageProps) {
+function PhotoImage({ src, alt, width, height, className = "" }: PhotoImageProps) {
   const [loaded, setLoaded] = useState(false);
 
   return (
     <Image
       src={src}
       alt={alt}
-      width={800}
-      height={600}
+      width={width}
+      height={height}
       sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
       onLoad={() => setLoaded(true)}
       className={`w-full h-auto transition-all duration-700 ease-out ${
