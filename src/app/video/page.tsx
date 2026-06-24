@@ -2,7 +2,7 @@
 import Navbar from "../components/Navbar";
 import PageTitle from "../components/PageTitle";
 import videoUrls from "./vid-thumbnails.json";
-import Image from "next/image";
+import PhotoImage from "../components/PhotoImage";
 import { faExternalLink } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
@@ -35,12 +35,10 @@ export default function Video() {
             rel="noopener noreferrer"
             className="block overflow-hidden relative group cursor-pointer"
           >
-            <Image
+            <PhotoImage
               src={thumbnail.thumbnail_path}
               alt={`Video ${i}`}
-              width={800}
-              height={600}
-              className="w-full h-auto transition-transform duration-300 group-hover:scale-105"
+              className="group-hover:scale-105"
             />
             {/* Hover Overlay */}
             <div className="absolute inset-0 bg-black transition-all duration-300 flex align opacity-0 group-hover:opacity-60 py-2 px-2" />

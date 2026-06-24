@@ -1,36 +1,36 @@
 import Navbar from "../components/Navbar";
 import PageTitle from "../components/PageTitle";
-import Image from "next/image";
+import PhotoImage from "../components/PhotoImage";
 
 const photoFiles = [
   "DSC00638.JPG",
-  "DSC01222.png",
-  "DSC01230.png",
+  "DSC01222.jpg",
+  "DSC01230.jpg",
   "DSC01319.JPG",
-  "DSC01324.png",
-  "DSC01420.png",
-  "DSC01422.png",
-  "DSCF2697.png",
-  "DSCF2753.png",
-  "DSCF2779.png",
-  "DSCF2876.png",
-  "DSCF2888.png",
+  "DSC01324.jpg",
+  "DSC01420.jpg",
+  "DSC01422.jpg",
+  "DSCF2697.jpg",
+  "DSCF2753.jpg",
+  "DSCF2779.jpg",
+  "DSCF2876.jpg",
+  "DSCF2888.jpg",
   "DSCF2891.jpg",
-  "DSCF2898.png",
+  "DSCF2898.jpg",
   "DSCF2922.jpg",
-  "DSCF2974 1.png",
-  "DSCF3009.png",
-  "DSCF3020.png",
+  "DSCF2974 1.jpg",
+  "DSCF3009.jpg",
+  "DSCF3020.jpg",
   "DSCF3028.jpg",
-  "DSCF3139.png",
+  "DSCF3139.jpg",
   "DSCF3257.jpg",
   "DSCF3260.jpg",
-  "DSCF3319.png",
-  "DSCF3329.png",
-  "DSCF3426.png",
-  "DSCF3567.png",
-  "DSCF4104.png",
-  "DSCF4108.png",
+  "DSCF3319.jpg",
+  "DSCF3329.jpg",
+  "DSCF3426.jpg",
+  "DSCF3567.jpg",
+  "DSCF4104.jpg",
+  "DSCF4108.jpg",
 ];
 
 function Photos() {
@@ -45,13 +45,7 @@ function Photos() {
       <div className="columns-1 sm:columns-2 lg:columns-4 gap-4 space-y-4 mx-[60px] py-[60px]">
         {photoFiles.map((file, i) => (
           <div key={i} className="overflow-hidden rounded-x ">
-            <Image
-              src={`/images/${file}`}
-              alt={`Photo ${i}`}
-              width={800}
-              height={600}
-              className="w-full h-auto "
-            />
+            <PhotoImage src={`/images/${file}`} alt={`Photo ${i}`} />
           </div>
         ))}
       </div>
